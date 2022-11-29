@@ -6,7 +6,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full flex flex-row justify-between items-center px-20 mt-20">
+    <footer className="w-full flex flex-row justify-between items-center lg:px-20 px-5 mt-20">
       {/* Logo */}
       <div className="w-1/2 flex flex-row justify-start">
         <Link href={"/"}>
@@ -26,7 +26,7 @@ export default function Footer() {
           <p>© {currentYear} Panthart</p>
 
           <div className="text-mainPink font-semibold italic my-3">
-            <Link href={"/"}>Terms And Conditions</Link>
+            <Link href={"/terms-and-conditions"}>Terms And Conditions</Link>
           </div>
         </div>
       </div>

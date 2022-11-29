@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Specs() {
   return (
-    <section className="w-full py-10">
+    <section className="w-full lg:py-10 py-1">
       <div className="w-full flex animate-pulse">
         <Image
           src={"/ComradeSlide.png"}
@@ -15,7 +15,7 @@ export default function Specs() {
         />
       </div>
 
-      <section className="w-full my-20 px-20">
+      <section className="w-full my-20 lg:px-20 px-5 text-center lg:text-left">
         <p>
           We are a community of 5, 500 unique Comrades. 5000 Comrades will be
           released first for public claim, after which the remaining 500
@@ -23,8 +23,8 @@ export default function Specs() {
           individually cost 100x the price from that of the first 5000 Comrades.
         </p>
 
-        <div className="w-full flex flex-row gap-20 my-20">
-          <div className="w-1/2">
+        <div className="w-full lg:flex lg:flex-row lg:gap-20 my-20 text-center lg:text-left">
+          <div className="lg:w-1/2 w-full">
             <h1 className="text-mainPink text-[2rem] font-bold italic">
               Specs And Traits
             </h1>
@@ -38,7 +38,7 @@ export default function Specs() {
           </div>
 
           {/* Comrade Collage */}
-          <div className="w-1/2 flex flex-row justify-end">
+          <div className="lg:w-1/2 w-full flex lg:flex-row lg:justify-end justify-center mt-10">
             <Image
               src={"/ComradeCollege.svg"}
               width={300}

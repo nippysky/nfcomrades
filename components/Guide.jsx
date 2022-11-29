@@ -3,7 +3,7 @@ import GuideCards from "./GuideCards";
 
 export default function Guide() {
   return (
-    <section className="w-full px-20 py-20">
+    <section className="w-full lg:px-20 px-5 py-20 text-center lg:text-left">
       <h1 className="text-mainPink text-[2rem] font-bold italic">
         Let’s Guide You Into The Community
       </h1>
@@ -14,7 +14,7 @@ export default function Guide() {
         watch the videos below to learn.
       </p>
 
-      <div className="w-full grid grid-cols-2 gap-10 my-20">
+      <div className="w-full grid md:grid-cols-2 gap-10 my-20">
         <GuideCards title={"Getting Started With Metamask"} link={"/"} />
         <GuideCards title={"How To Buy Ethereum"} link={"/"} />
         <GuideCards title={"How To Mint An NFT"} link={"/"} />

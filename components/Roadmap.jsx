@@ -3,7 +3,7 @@ import roadmap from "../roadmap";
 
 export default function Roadmap() {
   return (
-    <section className="w-full px-20">
+    <section className="w-full lg:px-20 px-5">
       <h1 className="text-mainPink text-[2rem] italic font-bold">
         RoadMap Activations
       </h1>

@@ -21,19 +21,22 @@ export default function Navbar() {
 
       {/* Social Links */}
       <nav className="flex flex-row gap-10 text-white">
-        <Link href={"/"}>
+        <Link target="_blank" href={"https://discord.gg/uuvbs9DJ7H"}>
           <span className=" cursor-pointer hover:text-mainPink">
             <SiDiscord size={22} />
           </span>
         </Link>
 
-        <Link href={"/"}>
+        <Link target="_blank" href={"https://twitter.com/panth_art"}>
           <span className="cursor-pointer hover:text-mainPink">
             <SiTwitter size={22} />
           </span>
         </Link>
 
-        <Link href={"/"}>
+        <Link
+          target="_blank"
+          href={"https://www.instagram.com/panthart_official"}
+        >
           <span className="cursor-pointer hover:text-mainPink">
             <RiInstagramFill size={22} />
           </span>

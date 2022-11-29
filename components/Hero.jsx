@@ -60,11 +60,7 @@ export default function Hero() {
 
     await contract
       ?.claimTo(address, count)
-      .then(async (tx) => {
-        const receipt = tx[0].receipt; // the transaction receipt
-        const claimedTokenId = tx[0].id; // the id of the NFT claimed
-        const claimedNFT = await tx[0].data(); // (optional) get the claimed NFT metadata
-
+      .then(async () => {
         toast("Welcome To The Community. You Successfully Minted", {
           duration: 5000,
           style: {
@@ -75,10 +71,6 @@ export default function Hero() {
             padding: "20px",
           },
         });
-
-        console.log(receipt);
-        console.log(claimedTokenId);
-        console.log(claimedNFT);
       })
       .catch((err) => {
         console.log(err);
@@ -100,14 +92,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full min-h-screen px-20 py-2 bg-mainBG">
+    <section className="w-full min-h-screen lg:px-20 px-5 py-2 bg-mainBG">
       <Navbar />
       <Toaster position="top-center" />
 
-      <section className="flex flex-col h-screen justify-center w-full">
-        <div className="flex flex-row justify-between items-center w-full gap-32">
+      <section className="lg:flex lg:flex-col lg:h-screen lg:justify-center w-full my-20">
+        <div className="lg:flex lg:flex-row lg:justify-between lg:items-center w-full lg:gap-32">
           {/* Image */}
-          <div className="w-1/2 flex flex-row justify-start">
+          <div className="lg:w-1/2 w-full flex lg:flex-row lg:justify-start justify-center">
             <Image
               src={
                 "https://gateway.ipfscdn.io/ipfs/QmPA8x9KweqyLGLw1kmAibX59sqScbfqAh4KQkdJ9DZopK/0.gif"
@@ -120,7 +112,7 @@ export default function Hero() {
           </div>
 
           {/* Descriptions and mint button */}
-          <div className="w-1/2 flex-col items-end">
+          <div className="lg:w-1/2 w-full flex-col lg:items-end my-10 text-center lg:text-left">
             <h1 className="text-mainPink text-[2rem] font-bold italic">
               Become A Member Of Our Community
             </h1>
@@ -131,7 +123,7 @@ export default function Hero() {
             </h3>
 
             {/* MINT & CONNECT BUTTON */}
-            <div className="flex flex-row w-full gap-10">
+            <div className="flex flex-row w-full gap-10 justify-center lg:justify-start">
               {/* count */}
               {address ? (
                 <div className="flex flex-row gap-10 w-1/2 justify-start">
@@ -193,9 +185,9 @@ export default function Hero() {
         </div>
 
         {/* Statistics */}
-        <div className="w-full flex flex-row justify-between items-center mt-20">
+        <div className="w-full lg:flex lg:flex-row lg:justify-between lg:items-center mt-20">
           {/* unclaimed comrades */}
-          <div className="w-1/3 text-mainPink text-[1.1rem] font-semibold flex flex-row justify-center">
+          <div className="lg:w-1/3 w-full text-mainPink text-[1.1rem] font-semibold lg:flex lg:flex-row lg:justify-center text-center">
             {loading ? (
               <p className="text-mainGreen animate-bounce text-[1.2rem] font-semibold">
                 ...Loading NFT Data
@@ -209,20 +201,30 @@ export default function Hero() {
           </div>
 
           {/* contract address etherscan */}
-          <div className="w-1/3 text-mainPink text-[1.1rem] font-semibold flex flex-row justify-center">
+          <div className="lg:w-1/3 w-full text-mainPink text-[1.1rem] font-semibold flex flex-row justify-center my-10 ">
             <p>Smart Contract</p>
             <span className="relative left-2">
-              <Link href={"/"}>
+              <Link
+                target="_blank"
+                href={
+                  "https://etherscan.io/address/0x5fD120E8F0121ed1BA5824B813340245164fDdd0"
+                }
+              >
                 <HiOutlineExternalLink color="#22B573" size={22} />
               </Link>
             </span>
           </div>
 
           {/* View all the comrades */}
-          <div className="w-1/3 text-mainPink text-[1.1rem] font-semibold flex flex-row justify-center">
+          <div className="lg:w-1/3 w-full text-mainPink text-[1.1rem] font-semibold flex flex-row justify-center ">
             <p>View Comrades</p>
             <span className="relative left-2">
-              <Link href={"/"}>
+              <Link
+                target="_blank"
+                href={
+                  "https://drive.google.com/drive/folders/1ctNt_NPOQNN8X2CuqUdfb12TLXOFEYqo"
+                }
+              >
                 <HiOutlineExternalLink color="#22B573" size={22} />
               </Link>
             </span>
