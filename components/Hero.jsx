@@ -19,8 +19,8 @@ export default function Hero() {
             <Image
               src={"/nfcomrades_gif.gif"}
               alt={"comrades Gif"}
-              width={450}
-              height={450}
+              width={400}
+              height={400}
               priority
             />
           </div>
