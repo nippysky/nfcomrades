@@ -27,16 +27,13 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <Link target="_blank" href={"https://twitter.com/panth_art"}>
+        <Link target="_blank" href={"https://twitter.com/nfcomrades"}>
           <span className="cursor-pointer hover:text-mainPink">
             <SiTwitter size={22} />
           </span>
         </Link>
 
-        <Link
-          target="_blank"
-          href={"https://www.instagram.com/panthart_official"}
-        >
+        <Link target="_blank" href={"https://www.instagram.com/nfcomrades"}>
           <span className="cursor-pointer hover:text-mainPink">
             <RiInstagramFill size={22} />
           </span>
