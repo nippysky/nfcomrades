@@ -15,10 +15,22 @@ export default function Guide() {
       </p>
 
       <div className="w-full grid md:grid-cols-2 gap-10 my-20">
-        <GuideCards title={"Getting Started With Metamask"} link={"/"} />
-        <GuideCards title={"How To Buy Ethereum"} link={"/"} />
-        <GuideCards title={"How To Mint An NFT"} link={"/"} />
-        <GuideCards title={"Navigating Secondary Market"} link={"/"} />
+        <GuideCards
+          title={"Getting Started With Metamask"}
+          link={"https://www.youtube.com/watch?v=Af_lQ1zUnoM"}
+        />
+        <GuideCards
+          title={"How To Buy Ethereum"}
+          link={"https://www.youtube.com/watch?v=FMTYAMPQzSk"}
+        />
+        <GuideCards
+          title={"How To Mint An NFT"}
+          link={"https://www.youtube.com/watch?v=F-M9iKunaNA"}
+        />
+        <GuideCards
+          title={"Navigating Secondary Market"}
+          link={"https://www.youtube.com/watch?v=rOo3-WoaPE4"}
+        />
       </div>
     </section>
   );

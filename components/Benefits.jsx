@@ -10,44 +10,44 @@ export default function Benefits() {
 
       <div className="my-10 grid w-full lg:grid-cols-3 md:grid-cols-2 gap-10">
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"Exposure"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "Community members will not only benefit from activities and in house projects concerned with only Panthart. Collaborations and parternships we invole in will be of added utility to the Comrades."
           }
         />
 
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"Freebies"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "Occasionally, from time to time, Panthart will give out freebies to Comrades. These freebies can take any form. Giveaways, airdrops, insights, education , etc."
           }
         />
 
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"VIP"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "The vision of Panthart is to becoming the number one NFT company in Africa. This comes with extra benefits starting with our community members."
           }
         />
 
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"Stake Holders"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "As the official web 3 community for Panthart, community members grows with Panthart from scratch. On a timely basis, Panthart will share part of revenue/income accross Comrade holders. "
           }
         />
 
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"Exclusive"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "Our Discord is very exclusive, non community members have no need to be in our discord server because they will not have access to any information. Our Discord is meant for holders only."
           }
         />
 
         <BenefitCard
-          title={"Lorem Ipsium"}
+          title={"Assistance"}
           desc={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam"
+            "All Comrade holders can seek for assistance or collaboration. For example you want to start your own project, Panthart will be of assistance or partnership."
           }
         />
       </div>
